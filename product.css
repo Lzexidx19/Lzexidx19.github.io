@@ -1,0 +1,1587 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: white;
+    position: fixed;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+}
+.nav-container{
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    top: 0px;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 18% 80%;
+    grid-auto-rows: 100px;
+    grid-row-gap: 50px;
+}
+.nav-logo-container{
+    height: 75px;
+    margin-top: 12px;
+}
+.nav-logo-container img{
+    width: 80%;
+    height: 80%;
+    margin-top: 10px;
+}
+/** WHYNAIR DROP DOWN ---**/
+.whynair{
+    cursor: pointer;
+}
+.whynair-dropdown-container{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 100px;
+    left: 0;
+    background: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+}
+.whynair-menu{
+    width: 800px;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 135px;
+    float: right;
+}
+.whynair-menu-content{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.whynair-menu-content p{
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: rgb(5, 5, 86);
+}
+.whynair-close{
+    color: rgb(223, 30, 143);
+    cursor: pointer;
+    display: none;
+}
+.trigger-on{
+    color: rgb(5, 5, 86);
+    display: inline;
+}
+.trigger-off{
+    color: rgb(223, 30, 143);
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+
+
+
+/** RESPONSIVE NAV-MENU---**/
+.resp-searchbar{
+    position: relative;
+    right: 150px;
+    width: 77%;
+    height: 42px;
+    margin-top: 38px;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 35px;
+    border: none;
+    outline: none;
+    background: whitesmoke;
+    display: none;
+}
+.resp-search-logo{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    margin-right: 195px;
+    color: rgb(5, 5, 159);
+    display: none;
+}
+.resp-us{
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(5, 5, 159);
+    right: 0;
+    top: 38px;
+    margin-right: 125px;
+    display: none;
+}
+.fa-bars{
+    visibility: hidden;
+    position: absolute;
+    right: 0px;
+    padding-right: 55px;
+    margin-top: 45px;
+    font-size: 1.8rem;
+    color: rgb(5, 5, 159);
+}
+.fa-xmark{
+    visibility: hidden;
+    position: absolute;
+    right: 0px;
+    padding-right: 55px;
+    margin-top: 45px;
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(223, 30, 143);
+}
+.resp-whynair-menu{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: none;
+}
+.resp-nav-menu{
+    display: none;
+}
+.resp-nav-menu .resp-whynair-menu ul li{
+    border: none;
+    margin-top: -25px;
+    color: white;
+}
+.resp-whynair-close{
+    display: none;
+}
+/** NAV-TOP-CONTENT-------------------------------------------------------------**/
+.nav-top-content{
+    width: auto;
+    height: 40px;
+    display: flex;
+    margin-top: 5px;
+    float: right;
+}
+.nav-top-content a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: rgb(2, 2, 120);
+}
+.icns{
+    padding: 7px;
+    background: rgb(5, 5, 86);
+    border-radius: 25px;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+.chat-us{
+    margin-left: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 200px;
+    cursor: pointer;
+    color: rgb(5, 5, 86);
+}
+.chat-us-dropdown{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    top: 0px;
+    left: 75px;
+    background: rgb(5, 5, 86);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.chat-us-dropdown p{
+    text-align: center;
+    padding-top: 8px;
+    color: white;
+    font-size: 17px;
+}
+.nav-top-content .chat-us-con a .us:hover{
+    .chat-us-dropdown{
+        opacity: 1;
+    }
+}
+.nav-search-bar{
+    position: relative;
+    width: 0px;
+    height: 20px;
+    border-radius: 15px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    left: 15px;
+    top: 5px;
+    background: rgb(217, 215, 215);
+    padding-right: 35px;
+    padding-left: 15px;
+    transition: 0.5s;
+}
+.search-logo-open{
+    position: relative;
+    font-size: 1.2rem;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    color: rgb(5, 5, 86);
+}
+.search-logo-close{
+    position: relative;
+    font-size: 1.2rem;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    color: rgb(5, 5, 86);
+    display: none;
+}
+.nav-hr{
+    width: 100%;
+    height: 1px;
+    margin-top: 55px;
+    background-color: rgb(5, 5, 86);
+}
+
+/** nav-bottom-content ------------------------------------------------ **/
+.nav-bottom-content{
+    width: 800px;
+    height: 40px;
+    display: flex;
+    margin-top: 5px;
+    float: right;
+}
+.nav-bottom-content ul{
+    display: flex;
+    list-style: none;
+    text-align: left;
+}
+.nav-bottom-content ul li{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 130%;
+}
+.nav-bottom-content a{
+    text-decoration: none;
+    color: rgb(5, 5, 86);
+}
+/** top-wrapper -----------------**/
+.top-wrapper{
+    width: 100%;
+    height: auto;
+    background: radial-gradient(circle at 87% 1%, rgba(246, 60, 139, 0.3), rgba(246, 60, 139, 0) 50%);
+}
+.top-container{
+    width: 90%;
+    height: 500px;
+    margin-left: 5%;
+    padding-top: 100px;
+    gap: 50px;
+    display: flex;
+}
+.top-imgcon{
+    width: 380px;
+    height: 450px;
+    margin-top: 25px;
+    margin-left: 15%;
+}
+.top-imgcon img{
+    width: 100%;
+    height: 100%;
+}
+.top-detailscon{
+    width: 450px;
+    height: 350px;
+    margin-top: 35px;
+}
+.top-detailscon h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 55px;
+    color: rgb(5, 5, 86);
+}
+.top-detailscon p{
+    width: 500px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    color: rgb(5, 5, 86);
+    margin-top: 20px;
+}
+.arrow-down-container{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+.arrow-down-container i{
+    font-size: 3rem;
+    color: rgb(5, 5, 86);
+}
+/** filter-container -------------**/
+.filter-container{
+    width: 100%;
+    height: auto;
+}
+.filter-content{
+    width: 80%;
+    height: 70px;
+    margin-left: 10%;
+    margin-top: 80px;
+    border: 2px solid rgb(5, 5, 86);
+    border-right: none;
+    border-left: none;
+    overflow-y: hidden;
+}
+.filter-title{
+    width: 100%;
+    height: 50px;
+    font-size: 1.7rem;
+    font-weight: 400;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    color: rgb(5, 5, 86);
+}
+.filter-openmenu{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.filter-closemenu{
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+.resp-filter-openmenu{
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+.resp-filter-closemenu{
+        margin-right: 20px;
+        cursor: pointer;
+        display: none;
+    }
+.filter-buttons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-evenly;
+}
+.application-con{
+    width: 30%;
+    color: rgb(5, 5, 86);
+    font-size: 1.3rem;
+    font-weight: 400;
+    display: inline-block;
+}
+.bodypart-con{
+    width: 30%;
+    color: rgb(5, 5, 86);
+    font-size: 1.3rem;
+    font-weight: 400;
+    display: inline-block;
+}
+.need-con{
+    width: 30%;
+    color: rgb(5, 5, 86);
+    font-size: 1.3rem;
+    font-weight: 400;
+    display: inline-block;
+}
+.filter-buttons select{
+    width: 100%;
+    height: 70px;
+    text-align-last: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 10px;
+    outline: none;
+    cursor: pointer;
+    color: rgb(5, 5, 86);
+    border: 2px solid rgb(5, 5, 86);
+}
+.show-numcount-con{
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+}
+.num-counter{
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    font-style: italic;
+    color: rgb(5, 5, 86);
+}
+/* prod list wrapper x container --------------------- */
+.prodlist-wrapper{
+    width: 100%;
+    height: auto;
+}
+.prodlist-container{
+    width: 80%;
+    height: 2050px;
+    margin-left: 10%;
+    margin-top: 15px;
+    overflow-y: hidden;
+}
+.prodlist-content{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 500px;
+    grid-row-gap: 20px;
+    justify-content: space-evenly;
+}
+.product-item{
+}
+.prodimg-con{
+    width: 100%;
+    height: 280px;
+}
+.prodimg-con img{
+    width: 100%;
+    height: 100%;
+}
+.proddeets-con{
+    width: 100%;
+    height: 150px;
+}
+.proddeets-con h2{
+    font-size: 1.8;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: rgb(5, 5, 86);
+    text-align: center;
+    margin-top: 15px;
+}
+.proddeets-con p{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    color: rgb(5, 5, 86);
+}
+.product-item button{
+    width: 100%;
+    height: 45px;
+    font-size: 0.9rem;
+    color: rgb(223, 30, 143);
+    background: transparent;
+    border: 2px solid rgb(223, 30, 143);
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.product-item button:hover{
+    color: white;
+    background: rgb(223, 30, 143);
+    transform: translateY(-10%);
+    box-shadow: rgba(41, 2, 194, 0.5) 0px 5px 15px;
+}
+.showmore-container{
+    width: 20%;
+    margin-left: 40%;
+    text-align: center;
+}
+.filter-smbtn1{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background: rgb(223, 30, 143);
+}
+.filter-smbtn2{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background: rgb(223, 30, 143);
+    display: none;
+}
+.filter-hidebtn{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background: rgb(223, 30, 143);
+    display: none;
+}
+.resp-smbtn1{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background: rgb(223, 30, 143);
+    display: none;
+}
+.resp-smbtn2{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background: rgb(223, 30, 143);
+    display: none;
+}
+.resp-hidebtn{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background: rgb(223, 30, 143);
+    display: none;
+}
+/* subcon5 --------------------*/
+.bot-subcon5{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    background-image: radial-gradient(circle at 13% 0, rgba(253, 179, 45, 0.6), rgba(238, 253, 55, 0) 78%);
+}
+.subcon5-content{
+    width: 90%;
+    height: 580px;
+    margin-top: 25px;
+    margin-left: 5%;
+    display: flex;
+}
+.subcon5-imgcon{
+    width: 27%;
+    height: 400px;
+    margin-left: 10%;
+    margin-top: 125px;
+}
+.subcon5-imgcon img{
+    width: 100%;
+    height: 100%;
+}
+.subcon5-details{
+    width: 45%;
+    height: 300px;
+    margin-top: 200px;
+    margin-left: 10%;
+}
+.subcon5-details h1{
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: rgb(5, 5, 86);
+}
+.subcon5-details button{
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    width: 50%;
+    height: 50px;
+    color: white;
+    background-color: rgb(243, 20, 83);
+    margin-top: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.subcon5-details button:hover{
+    transform: translateY(-10%);
+    box-shadow: rgba(41, 2, 194, 0.5) 0px 5px 15px;
+}
+.subcon5-signup-con{
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.signup-details{
+    width: 30%;
+    height: 480px;
+    margin-left: 10%;
+    margin-top: 150px;
+}
+.signup-details h1{
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: rgb(5, 5, 86);
+}
+.signup-details p{
+    width: 105%;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 30px;
+    color: rgb(5, 5, 86);
+}
+.subcon5-fillup-con{
+    width: 50%;
+    height: 350px;
+    margin-top: 120px;
+    margin-left: 5%;
+}
+.input-details{
+    display: inline-block;
+    width: 70%;
+    height: 50px;
+    margin-top: 20px;
+    outline: none;
+    border: 2px solid black;
+}
+.input-details{
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 20px;
+}
+.terms-condition-con{
+    width: 70%;
+    height: 120px;
+}
+.check-box{
+    position:relative;
+    width: 22px;
+    height: 30px;
+    top: 30px;
+    accent-color: rgb(5, 5, 161);
+}
+.terms-condition{
+    font-size: 1rem;
+    color: rgb(5, 5, 86);
+    font-weight: 500;
+    margin-left: 55px;
+    margin-top: -10px;
+    line-height: 25px;
+
+}
+.subcon5-fillup-con p a{
+    color: rgb(223, 30, 143);
+}
+.subcon5-fillup-btn{
+    width: 50%;
+    height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    word-spacing: 1px;
+    margin-top: 15px;
+    border: none;
+    color: white;
+    background-color: rgb(243, 20, 83);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.subcon5-fillup-btn:hover{
+    transform: translateY(-10%);
+    box-shadow: rgba(41, 2, 194, 0.5) 0px 5px 15px;
+}
+
+
+/** FOOTER SA WAKAS LAST PART!!!!! :D  ---------------------------------------------------------------------**/
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin-top: 5px;
+}
+.footer-container{
+    width: 80%;
+    height: 450px;
+    margin-top: 25px;
+    margin-left: 10%;
+    display: flex;
+}
+.footer-left-con{
+    display: inline-block;
+    width: 50%;
+    height: 450px;
+}
+.footer-accounts{
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    margin-top: 15px;
+}
+.footer-accounts i{
+    font-size: 1.2rem;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 25px;
+    background-color: rgb(1, 1, 76);
+    color: white;
+}
+.footer-menu{
+    width: 50%;
+    height: 250px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(1, 1, 76);
+    margin-bottom: 30px;
+}
+.footer-menu ul{
+    list-style-type: none;
+}
+.footer-menu ul li{
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+.footer-menu a{
+    text-decoration: none;
+    color:  rgb(1, 1, 76);
+}
+.copy-write-con{
+    width: 50%;
+    height: 70px;
+    display: flex;
+}
+.copy-write-con p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(1, 1, 76);
+}
+.copy-write-con a{
+    font-weight: 600;
+    color: rgb(1, 1, 76);
+}
+.footer-right-logo{
+    width: 12%;
+    height: 50px;
+    position: relative;
+    margin-top: 350px;
+    margin-left: 400px;
+    transition: 0.3s ease-in-out;
+}
+.footer-right-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-right-logo:hover{
+    transform: translateY(-10%);
+}
+@media screen and (max-width: 1200px) {
+    
+    .nav-logo-container{
+        height: 65px;
+        margin-top: 15px;
+    }
+    .nav-bottom-content ul li{
+        font-size: 0.7rem;
+        font-weight: 700;
+        margin-left: 20px;
+        margin-top: 5px;
+        width: 100%;
+    }
+    .nav-bottom-content ul{
+        display: flex;
+        list-style: none;
+        text-align: left;
+        margin-left: 180px;
+    }
+    .chat-us{
+        font-size: 1rem;
+    }
+    .whynair-menu-content{
+        margin-left: 220px;
+    }
+    .resp-nav-menu{
+        display: none;
+    }
+    /** top-wrapper -----------------**/
+    .top-container{
+        width: 90%;
+        height: 500px;
+        margin-left: 5%;
+        padding-top: 100px;
+        gap: 50px;
+        display: flex;
+    }
+    .top-imgcon{
+        width: 380px;
+        height: 450px;
+        margin-top: 25px;
+        margin-left: 15%;
+    }
+    .top-imgcon img{
+        width: 100%;
+        height: 100%;
+    }
+    .top-detailscon{
+        width: 450px;
+        height: auto;
+        margin-top: 55px;
+    }
+    .top-detailscon h1{
+        font-size: 3rem;
+    }
+    .top-detailscon p{
+        width: 400px;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        color: rgb(5, 5, 86);
+        margin-top: 20px;
+    }
+    /* prod list wrapper x container --------------------- */
+    .prodlist-container{
+        width: 90%;
+        height: 2050px;
+        margin-left: 5%;
+        margin-top: 15px;
+        overflow-y: hidden;
+    }
+    .prodlist-content{
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: 500px;
+        grid-row-gap: 20px;
+        grid-column-gap: 5px;
+        justify-content: space-evenly;
+    }
+    .product-item{
+    }
+    .product-item button{
+        width: 90%;
+        height: 45px;
+        margin-left: 5%;
+        font-size: 0.9rem;
+        color: rgb(223, 30, 143);
+        background: transparent;
+        border: 2px solid rgb(223, 30, 143);
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+    .product-item button:hover{
+        color: white;
+        background: rgb(223, 30, 143);
+        transform: translateY(-10%);
+        box-shadow: rgba(41, 2, 194, 0.5) 0px 5px 15px;
+    }
+    .showmore-container{
+        width: 20%;
+        margin-left: 40%;
+        text-align: center;
+    }
+    .proddeets-con{
+        width: 80%;
+        height: 150px;
+        margin-left: 10%;
+    }
+    .proddeets-con h2{
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+        color: rgb(5, 5, 86);
+        text-align: center;
+        margin-top: 15px;
+    }
+    .proddeets-con p{
+        text-align: center;
+        font-size: 1.1rem;
+        margin-top: 15px;
+        color: rgb(5, 5, 86);
+    }
+    /* subcon5 --------------------*/
+    .subcon5-content{
+        width: 90%;
+        height: 580px;
+        margin-top: 25px;
+        margin-left: 5%;
+        display: flex;
+    }
+    .subcon5-imgcon{
+        width: 300;
+        height: 400px;
+        margin-left: 10%;
+        margin-top: 125px;
+    }
+    .subcon5-imgcon img{
+        width: 100%;
+        height: 100%;
+    }
+    .subcon5-details{
+        width: 45%;
+        height: 300px;
+        margin-top: 200px;
+        margin-left: 10%;
+    }
+    .subcon5-details h1{
+        font-weight: 900;
+        font-size: 2.5rem;
+        color: rgb(5, 5, 86);
+    }
+    .subcon5-details button{
+        margin-top: 30px;
+    }
+    .subcon5-details button:hover{
+        transform: translateY(-10%);
+        box-shadow: rgba(41, 2, 194, 0.5) 0px 5px 15px;
+    }
+    .subcon5-signup-con{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        background-image: radial-gradient(circle at 13% 0, rgba(253, 179, 45, 0.6), rgba(238, 253, 55, 0) 78%);
+    }
+    .signup-details{
+        width: 30%;
+        height: 480px;
+        margin-left: 10%;
+        margin-top: 150px;
+    }
+    .signup-details h1{
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .signup-details p{
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-top: 30px;
+        color: rgb(5, 5, 86);
+    }
+    /** FOOTER SA WAKAS LAST PART!!!!! :D  ---------------------------------------------------------------------**/
+    .footer{
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        margin-top: 5px;
+    }
+    .footer-container{
+        width: 80%;
+        height: 450px;
+        margin-top: 25px;
+        margin-left: 10%;
+        display: flex;
+    }
+    .footer-left-con{
+        display: inline-block;
+        width: 60%;
+        height: 450px;
+    }
+    .footer-accounts{
+        width: 100%;
+        height: 50px;
+        text-align: left;
+        margin-top: 15px;
+    }
+    .footer-accounts i{
+        font-size: 1.2rem;
+        padding: 8px;
+        margin-right: 5px;
+        border-radius: 25px;
+        background-color: rgb(1, 1, 76);
+        color: white;
+    }
+    .footer-menu{
+        width: 50%;
+        height: 250px;
+        color: rgb(1, 1, 76);
+        margin-bottom: 30px;
+    }
+    .footer-menu ul{
+        list-style-type: none;
+    }
+    .footer-menu ul li{
+        padding-bottom: 15px;
+        margin-left: 0px;
+        font-weight: 600;
+    }
+    .footer-menu a{
+        text-decoration: none;
+        color:  rgb(1, 1, 76);
+    }
+    .copy-write-con{
+        width: 50%;
+        height: 70px;
+        display: flex;
+    }
+    .copy-write-con p{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: rgb(1, 1, 76);
+    }
+    .copy-write-con a{
+        color: rgb(1, 1, 76);
+    }
+    .footer-right-logo{
+        width: 18%;
+        height: 70px;
+        position: relative;
+        margin-top: 350px;
+        margin-left:280px;
+        transition: 0.3s ease-in-out;
+    }
+    .footer-right-logo img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer-right-logo:hover{
+        transform: translateY(-10%);
+    }
+}
+@media screen and (max-width: 1000px) {
+    .nav-logo-container{
+        height: 55px;
+        margin-top: 15px;
+    }
+    .nav-bottom-content ul li{
+        font-size: 0.5rem;
+        font-weight: 700;
+        margin-left: 20px;
+        margin-top: 5px;
+        width: 100%;
+    }
+    .nav-bottom-content ul{
+        display: flex;
+        list-style: none;
+        text-align: left;
+        margin-left: 320px;
+    }
+    .chat-us{
+        font-size: 0.8rem;
+    }
+    .icns{
+        font-size: 0.8rem;
+        padding: 5px;
+        height: 12px;
+    }
+    .whynair-menu-content{
+        margin-left: 350px;
+    }
+    .resp-nav-menu{
+        display: none;
+    }
+    /** top-wrapper -----------------**/
+    .top-container{
+        width: 90%;
+        height: 500px;
+        margin-left: 5%;
+        padding-top: 100px;
+        gap: 50px;
+        display: flex;
+    }
+    .top-imgcon{
+        width: 380px;
+        height: 450px;
+        margin-top: 40px;
+        margin-left: 5%;
+    }
+    .top-imgcon img{
+        width: 100%;
+        height: 100%;
+    }
+    .top-detailscon{
+        width: 450px;
+        height: 300px;
+        margin-top: 105px;
+    }
+    .top-detailscon h1{
+        font-size: 2.2rem;
+        line-height: 40px;
+    }
+    .top-detailscon p{
+        width: 400px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        color: rgb(5, 5, 86);
+        margin-top: 20px;
+    }
+    /** filter-container -------------**/
+    .filter-title{
+        width: 100%;
+        height: 50px;
+        font-size: 1.5rem;
+        font-weight: 400;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        color: rgb(5, 5, 86);
+    }
+    .filter-buttons{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        margin-top: 5px;
+        justify-content: space-evenly;
+    }
+    .application-con{
+        width: 30%;
+        color: rgb(5, 5, 86);
+        font-size: 1.3rem;
+        font-weight: 400;
+        display: inline-block;
+    }
+    .bodypart-con{
+        width: 30%;
+        color: rgb(5, 5, 86);
+        font-size: 1.3rem;
+        font-weight: 400;
+        display: inline-block;
+    }
+    .need-con{
+        width: 30%;
+        color: rgb(5, 5, 86);
+        font-size: 1.3rem;
+        font-weight: 400;
+        display: inline-block;
+    }
+    /* prod list wrapper x container --------------------- */
+    .prodlist-container{
+        width: 90%;
+        height: 1900px;
+        margin-left: 5%;
+        margin-top: 15px;
+        overflow-y: hidden;
+    }
+    .prodlist-content{
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: 500px;
+        grid-row-gap: 20px;
+        grid-column-gap: 0px;
+        justify-content: space-evenly;
+    }
+    .product-item{
+    }
+    .prodimg-con{
+        width: 100%;
+        height: 230px;
+    }
+    .proddeets-con{
+        width: 100%;
+        height: 150px;
+        margin-left: 0%;
+    }
+    .proddeets-con h2{
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+        color: rgb(5, 5, 86);
+        text-align: center;
+        margin-top: 15px;
+    }
+    .proddeets-con p{
+        text-align: center;
+        font-size: 1.1rem;
+        margin-top: 15px;
+        color: rgb(5, 5, 86);
+    }
+    .product-item button{
+        width: 60%;
+        height: 45px;
+        margin-left: 20%;
+        font-size: 0.9rem;
+        color: rgb(223, 30, 143);
+        background: transparent;
+        border: 2px solid rgb(223, 30, 143);
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+    .product-item button:hover{
+        color: white;
+        background: rgb(223, 30, 143);
+        transform: translateY(-10%);
+        box-shadow: rgba(41, 2, 194, 0.5) 0px 5px 15px;
+    }
+    .showmore-container{
+        width: 20%;
+        margin-left: 40%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    .nav-container{
+        width: 100%;
+        margin-left: 0%;
+        display: grid;
+        grid-template-columns: 25% 50%;
+        grid-auto-rows: 100px;
+        grid-row-gap: 20px;
+    }
+    .nav-logo-container{
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    .nav-content-container{
+        display: none;
+    }
+    .fa-bars{
+        visibility: visible;   
+    }
+    .resp-searchbar{
+        display: block;
+    }
+    .resp-search-logo{
+        display: block;
+    }
+    .resp-us{
+        display: block;
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+    .resp-nav-menu{
+        width: 100vw;
+        height: 100vh;
+        margin-top: 0px;
+        background: rgba(51, 117, 239, 0.8);
+        transform: translateX(-150%);
+        transition: 0.5s ease-in-out;
+        display: block;
+    }
+    .resp-nav-menu ul{
+        list-style: none;
+    }
+    .resp-nav-menu ul li{
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        border: 1px solid rgb(255, 255, 255);
+    }
+    .resp-nav-menu ul a{
+        text-decoration: none;
+        color: white;
+    }
+    .resp-nav-menu p{
+        margin-top: 70px;
+        margin-left: 10px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: white;
+    }
+    .resp-nav-accounts{
+        width: 300px;
+        height: 50px;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .resp-nav-accounts a{
+        text-decoration: none;
+        color: white;
+    }
+    .resp-nav-accounts i{
+        padding: 8px;
+        border-radius: 22px;
+        color: white;
+        background-color: rgb(5, 5, 86);
+    }
+    /** top-wrapper -----------------**/
+    .top-container{
+        height: auto;
+        display: inline-block;
+    }
+    .top-imgcon{
+        width: 80%;
+        height: 650px;
+        margin-top: 25px;
+        margin-left: 10%;
+    }
+    .top-detailscon{
+        width: 80%;
+        height: 350px;
+        margin-top: 35px;
+        margin-left: 10%;
+    }
+    br{
+        display: none;
+    }
+    .top-detailscon h1{
+        font-size: 3rem;
+        line-height: 50px;
+    }
+    .top-detailscon p{
+        width: 100%;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        color: rgb(5, 5, 86);
+        margin-top: 20px;
+    }
+    .arrow-down-container i{
+        font-size: 2.5rem;
+        color: rgb(5, 5, 86);
+    }
+    /** filter-container -------------**/
+    .filter-content{
+        width: 80%;
+        height: 70px;
+        margin-left: 10%;
+        margin-top: 80px;
+        border: 2px solid rgb(5, 5, 86);
+        border-right: none;
+        border-left: none;
+        overflow-y: hidden;
+    }
+    .filter-title{
+        width: 100%;
+        height: 50px;
+        font-size: 1.7rem;
+        font-weight: 400;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        color: rgb(5, 5, 86);
+    }
+    .filter-openmenu{
+        margin-right: 20px;
+        cursor: pointer;
+        display: none;
+    }
+    .filter-closemenu{
+        margin-right: 20px;
+        cursor: pointer;
+        display: none;
+    }
+    .resp-filter-openmenu{
+        margin-right: 20px;
+        cursor: pointer;
+        display: block;
+    }
+    .resp-filter-closemenu{
+        margin-right: 20px;
+        cursor: pointer;
+        display: none;
+    }
+    .filter-buttons{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        justify-content: space-evenly;
+    }
+    .application-con{
+        width: 100%;
+        color: rgb(5, 5, 86);
+        font-size: 1.3rem;
+        font-weight: 400;
+        display: inline-block;
+    }
+    .bodypart-con{
+        width: 100%;
+        color: rgb(5, 5, 86);
+        font-size: 1.3rem;
+        font-weight: 400;
+        display: inline-block;
+    }
+    .need-con{
+        width: 100%;
+        color: rgb(5, 5, 86);
+        font-size: 1.3rem;
+        font-weight: 400;
+        display: inline-block;
+    }
+        /* prod list wrapper x container --------------------- */
+    .prodlist-container{
+        width: 80%;
+        height: 2825px;
+        margin-left: 10%;
+        margin-top: 15px;
+        overflow-y: hidden;
+    }
+    .prodlist-content{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 500px;
+        grid-row-gap: 20px;
+        grid-column-gap: 0px;
+        justify-content: unset;
+    }
+    .product-item{
+    }
+    .prodimg-con{
+        width: 80%;
+        height: 230px;
+        margin-left: 10%;
+    }
+    .prodimg-con img{
+        width: 100%;
+        height: 100%;
+    }
+    .proddeets-con{
+        width: 90%;
+        height: 150px;
+        margin-left: 5%;
+    }
+    .proddeets-con h2{
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .proddeets-con p{
+        font-size: 1rem;
+    }
+    .product-item button{
+        width: 90%;
+        height: 45px;
+        margin-left: 5%;
+        transition: 0.3s ease-in-out;
+    }
+    .product-item button:hover{
+        color: white;
+        background: rgb(223, 30, 143);
+        transform: translateY(-10%);
+        box-shadow: rgba(41, 2, 194, 0.5) 0px 5px 15px;
+    }
+    .showmore-container{
+        width: 20%;
+        margin-left: 40%;
+        text-align: center;
+    }
+    .filter-smbtn1{
+        width: 100%;
+        height: 40px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: white;
+        background: rgb(223, 30, 143);
+        display: none;
+    }
+    .resp-smbtn1{
+        width: 100%;
+        height: 40px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: white;
+        background: rgb(223, 30, 143);
+        display: block;
+    }
+    /* subcon5 --------------------*/
+    .subcon5-content{
+        width: 90%;
+        height: auto;
+        margin-top: 25px;
+        margin-left: 5%;
+        display: inline-block;
+    }
+    .subcon5-imgcon{
+        width: 80%;
+        height: 600px;
+        margin-left: 10%;
+        margin-top: 0px;
+    }
+    .subcon5-details{
+        width: 80%;
+        height: auto;
+        margin-top: 30px;
+        margin-left: 10%;
+    }
+    .subcon5-details h1{
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: rgb(5, 5, 86);
+    }
+    .subcon5-details button{
+        font-size: 18px;
+        font-weight: 600;
+        border: none;
+        width: 100%;
+        height: 50px;
+        color: white;
+        background-color: rgb(243, 20, 83);
+        margin-top: 50px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+    /** sign up container -----------------**/
+    .subcon5-signup-con{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        display: inline-block;
+        background-image: radial-gradient(circle at 13% 0, rgba(253, 179, 45, 0.6), rgba(238, 253, 55, 0) 78%);
+    }
+    .signup-details{
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        margin-top: 50px;
+        color: rgb(5, 5, 86);
+    }
+    .signup-details h1{
+        font-size: 3.5rem;
+        font-weight: 900;
+    }
+    .signup-details p{
+        width: 100%;
+    }
+    .subcon5-fillup-con{
+        width: 90%;
+        height: 350px;
+        margin-top: 0px;
+        margin-left: 5%;
+    }
+    .input-details{
+        display: inline-block;
+        width: 95%;
+        height: 50px;
+        margin-top: 20px;
+        outline: none;
+        border: 2px solid black;
+    }
+    .input-details{
+        font-size: 1rem;
+        font-weight: 600;
+        padding-left: 20px;
+    }
+    .terms-condition-con{
+        width: 90%;
+        height: 120px;
+        margin-left: 10px;
+    }
+    .check-box{
+        position:relative;
+        width: 22px;
+        height: 30px;
+        top: 30px;
+        accent-color: rgb(20, 20, 186);
+    }
+    
+    .subcon5-fillup-con p a{
+        color: rgb(223, 30, 143);
+    }
+    .subcon5-fillup-btn{
+        width: 100%;
+    }
+    .subcon5-fillup-btn:hover{
+        transform: translateY(-10%);
+        box-shadow: rgba(41, 2, 194, 0.5) 0px 5px 15px;
+    }
+    .footer{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+    .footer-container{
+        width: 90%;
+        height: 450px;
+        margin-left: 5%;
+        display: flex;
+    }
+    .footer-left-con{
+        width: 70%;
+    }
+    .footer-accounts{
+        width: 100%;
+        text-align: left;
+    }
+    .footer-menu{
+        margin-bottom: 30px;
+        margin-left: 10%;
+        margin-top: 20px;
+    }
+    .copy-write-con{
+        width: 100%;
+    }
+    .footer-right-logo{
+        width: 20%;
+        margin-left:150px;
+    }
+}
