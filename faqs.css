@@ -77,6 +77,24 @@
     margin-top: 5px;
     margin-left: 5px;
 }
+/** RESPONSIVE NAV-MENU---**/
+.resp-nav-menu{
+    display: none;
+}
+.resp-whynair-menu{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: none;
+}
+.resp-nav-menu .resp-whynair-menu ul li{
+    border: none;
+    margin-top: -25px;
+    color: white;
+}
+.resp-whynair-close{
+    display: none;
+}
 /* responsive / mobile navbar ------------*/
 .responsive-nav-container{
     width: 100%;
@@ -579,16 +597,6 @@
     height: 100%;
 }
 /** RESPONSIVE -------------------------------------------------------**/
-@media screen and (max-width: 1950px){
-    .resp-nav-menu{
-        display: none;
-    }
-}
-@media screen and (max-width: 1400px){
-    .resp-nav-menu{
-        display: none;
-    }
-}
 @media screen and (max-width: 1200px) {
     
     .nav-logo-container{
