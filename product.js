@@ -167,8 +167,11 @@ $(document).ready(function () {
     $(document).ready(function () {
       $(".filter-smbtn1").click(function () {
         $('.prodlist-container').css({
-            'height': '3580px'
+            'height': 'auto'
         });
+        $('.first-showmore').css({
+          'display': 'grid'
+      });
         $('.filter-smbtn1').css({
           'display': 'none'
         });
@@ -180,8 +183,11 @@ $(document).ready(function () {
     $(document).ready(function () {
       $(".filter-smbtn2").click(function () {
         $('.prodlist-container').css({
-            'height': '4100px'
+            'height': 'auto'
         });
+        $('.second-showmore').css({
+          'display': 'grid'
+      });
         $('.filter-smbtn2').css({
           'display': 'none'
         });
@@ -193,7 +199,7 @@ $(document).ready(function () {
     $(document).ready(function () {
       $(".filter-hidebtn").click(function () {
         $('.prodlist-container').css({
-            'height': '2050px'
+            'height': 'auto'
         });
         $('.filter-hidebtn').css({
           'display': 'none'
@@ -201,45 +207,12 @@ $(document).ready(function () {
         $('.filter-smbtn1').css({
           'display': 'block'
         });
-      });
-    });
-    //responsive showmore products
-    $(document).ready(function () {
-      $(".resp-smbtn1").click(function () {
-          $('.prodlist-container').css({
-              'height': '5120px'
-          });
-          $('.resp-smbtn1').css({
-            'display': 'none'
-          });
-          $('.resp-smbtn2').css({
-            'display': 'block'
+        $('.first-showmore').css({
+          'display': 'none'
+        });
+        $('.second-showmore').css({
+          'display': 'none'
         });
       });
     });
-    $(document).ready(function () {
-      $(".resp-smbtn2").click(function () {
-          $('.prodlist-container').css({
-              'height': '5630px'
-          });
-          $('.resp-smbtn2').css({
-            'display': 'none'
-          });
-          $('.resp-hidebtn').css({
-            'display': 'block'
-        });
-      });
-    });
-    $(document).ready(function () {
-      $(".resp-hidebtn").click(function () {
-          $('.prodlist-container').css({
-              'height': '2825px'
-          });
-          $('.resp-hidebtn').css({
-            'display': 'none'
-          });
-          $('.resp-smbtn1').css({
-            'display': 'block'
-        });
-      });
-    });
+    
