@@ -910,13 +910,13 @@
         color: rgb(5, 5, 86);
     }
     .general-question-con h1{
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
     .general-question-con ul li{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .answer{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
     .ans5-ul .ans5-li{
         list-style-type: disc;
@@ -1130,10 +1130,10 @@
         font-size: 2rem;
     }
     .general-question-con ul li{
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     .answer{
-        font-size: 0.9rem;
+        font-size: 1.4rem;
     }
     .ans5-ul .ans5-li{
         list-style-type: disc;
@@ -1458,18 +1458,16 @@
         font-size: 1.3rem;
     }
     .general-question-con ul li{
-        font-size: 0.7rem;
+        font-size: 1.2rem;
     }
     .answer{
-        font-size: 0.6rem;
+        font-size: 1.2rem;
     }
     .question-btn{
         font-size: 12px;
     }
     .question-btn-close{
         font-size: 12px;
-    }
-    .subcon5-signup-con{
     }
     .signup-details{
         width: 90%;
