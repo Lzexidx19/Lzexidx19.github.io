@@ -22,9 +22,6 @@ $(document).ready(function () {
   });
   });
   });
-  
-  
-  
   // why nair dropdown menu
   $(document).ready(function () {
     $(".whynair-btn").click(function () {
@@ -115,8 +112,8 @@ $(document).ready(function () {
     });
     $(document).ready(function () {
         $(".view1").click(function () {
-            $('.filter-product-wrapper').css({
-                'height': '3350px'
+            $('.filter-product-container').css({
+                'height': '3370px'
             }); 
             $('.view1').css({
                 'display': 'none'
@@ -128,7 +125,7 @@ $(document).ready(function () {
       });
       $(document).ready(function () {
         $(".view2").click(function () {
-            $('.filter-product-wrapper').css({
+            $('.filter-product-container').css({
                 'height': '4500px'
             }); 
             $('.view2').css({
@@ -141,7 +138,7 @@ $(document).ready(function () {
       });
       $(document).ready(function () {
         $(".hide").click(function () {
-            $('.filter-product-wrapper').css({
+            $('.filter-product-container').css({
                 'height': '1150px'
             }); 
             $('.hide').css({
@@ -155,7 +152,7 @@ $(document).ready(function () {
       
         $(document).ready(function () {
           $(".pg-more-btn").click(function () {
-              $('.filter-product-wrapper').css({
+              $('.filter-product-container').css({
                 'height': 'auto'
               });
               $('.pg-more-btn').css({
@@ -168,8 +165,8 @@ $(document).ready(function () {
           });
           $(document).ready(function () {
             $(".pg-hide-btn").click(function () {
-                $('.filter-product-wrapper').css({
-                  'height': '1150'
+                $('.filter-product-container').css({
+                  'height': '1150px'
                 });
                 $('.pg-more-btn').css({
                   'display': 'block'
@@ -181,8 +178,8 @@ $(document).ready(function () {
             });
       $(document).ready(function () {
         $(".bg-btn").click(function () {
-            $('.filter-product-wrapper').css({
-              'height': '1150'
+            $('.filter-product-container').css({
+              'height': '1150px'
             });
             $('.product-guides').css({
                 'display': 'none'
@@ -212,8 +209,8 @@ $(document).ready(function () {
       });
       $(document).ready(function () {
         $(".pg-btn").click(function () {
-            $('.filter-product-wrapper').css({
-              'height': '1150'
+            $('.filter-product-container').css({
+              'height': '1150px'
             });
             $('.product-guides').css({
                 'display': 'block'
@@ -243,8 +240,8 @@ $(document).ready(function () {
       });
       $(document).ready(function () {
         $(".hr-btn").click(function () {
-            $('.filter-product-wrapper').css({
-              'height': '1150'
+            $('.filter-product-container').css({
+              'height': '1150px'
             });
             $('.product-guides').css({
                 'display': 'none'
@@ -274,7 +271,7 @@ $(document).ready(function () {
       });
       $(document).ready(function () {
         $(".view-all-btn").click(function () {
-            $('.filter-product-wrapper').css({
+            $('.filter-product-container').css({
               'height': '1150'
             });
             $('.product-guides').css({
@@ -297,9 +294,10 @@ $(document).ready(function () {
             });
           });
         });
+        // mobile responsive 767px-550px show more 
         $(document).ready(function () {
           $(".resp-view-more1").click(function () {
-              $('.filter-product-wrapper').css({
+              $('.filter-product-container').css({
                 'height': '8600px'
               });
               $('.resp-view-more1').css({
@@ -312,7 +310,7 @@ $(document).ready(function () {
           });
           $(document).ready(function () {
             $(".resp-view-more2").click(function () {
-                $('.filter-product-wrapper').css({
+                $('.filter-product-container').css({
                   'height': 'auto'
                 });
                 $('.resp-view-more2').css({
@@ -325,7 +323,7 @@ $(document).ready(function () {
             });
             $(document).ready(function () {
               $(".resp-hide").click(function () {
-                  $('.filter-product-wrapper').css({
+                  $('.filter-product-container').css({
                     'height': '3600'
                   });
                   $('.resp-hide').css({
@@ -339,7 +337,7 @@ $(document).ready(function () {
               // smaller screen filter buttons
               $(document).ready(function () {
                 $(".resp-view-all-btn").click(function () {
-                    $('.filter-product-wrapper').css({
+                    $('.filter-product-container').css({
                       'height': '3600'
                     });
                     $('.resp-view-more1').css({
@@ -364,7 +362,7 @@ $(document).ready(function () {
                 });
                 $(document).ready(function () {
                   $(".resp-pg-btn").click(function () {
-                      $('.filter-product-wrapper').css({
+                      $('.filter-product-container').css({
                         'height': '3600'
                       });
                       $('.resp-view-more1').css({
@@ -393,91 +391,282 @@ $(document).ready(function () {
                       });
                     });
                   });
+                $(document).ready(function () {
+                  $(".resp-bg-btn").click(function () {
+                      $('.filter-product-container').css({
+                        'height': '3600'
+                      });
+                      $('.resp-view-more1').css({
+                        'display': 'none'
+                      });
+                      $('.resp-view-more2').css({
+                        'display': 'none'
+                      });
+                      $('.resp-hide').css({
+                        'display': 'none'
+                      });
+                      $('.resp-hide-product').css({
+                        'display': 'none'
+                      });
+                      $('.resp-more-product').css({
+                        'display': 'block'
+                      });
+                      $('.body-guides').css({
+                        'display': 'grid'
+                      });
+                      $('.product-guides').css({
+                        'display': 'none'
+                      });
+                      $('.hair-removal').css({
+                        'display': 'none'
+                      });
+                    });
+                  });
+                $(document).ready(function () {
+                  $(".resp-hr-btn").click(function () {
+                      $('.filter-product-container').css({
+                        'height': '3600'
+                      });
+                      $('.resp-view-more1').css({
+                        'display': 'none'
+                      });
+                      $('.resp-view-more2').css({
+                        'display': 'none'
+                      });
+                      $('.resp-hide').css({
+                        'display': 'none'
+                      });
+                      $('.resp-hide-product').css({
+                        'display': 'none'
+                      });
+                      $('.resp-more-product').css({
+                        'display': 'block'
+                      });
+                      $('.body-guides').css({
+                        'display': 'none'
+                      });
+                      $('.product-guides').css({
+                        'display': 'block'
+                      });
+                      $('.hair-removal').css({
+                        'display': 'grid'
+                      });
+                    });
+                  });
+                $(document).ready(function () {
+                  $(".resp-more-product").click(function () {
+                      $('.filter-product-container').css({
+                        'height': 'auto'
+                      });
+                      $('.resp-more-product').css({
+                        'display': 'none'
+                      });
+                      $('.resp-hide-product').css({
+                        'display': 'block'
+                      });
+                    });
+                  });
+                $(document).ready(function () {
+                  $(".resp-hide-product").click(function () {
+                      $('.filter-product-container').css({
+                        'height': '3600px'
+                      });
+                      $('.resp-more-product').css({
+                        'display': 'block'
+                      });
+                      $('.resp-hide-product').css({
+                        'display': 'none'
+                      });
+                    });
+                  });
+                //mobile responsive 450px showmore button
+                
+                $(document).ready(function () {
+                  $(".resp-view-more3").click(function () {
+                      $('.filter-product-container').css({
+                        'height': '6950px'
+                      });
+                      $('.resp-view-more3').css({
+                        'display': 'none'
+                      });
+                      $('.resp-view-more4').css({
+                        'display': 'block'
+                      });
+                    });
+                  });
+                $(document).ready(function () {
+                  $(".resp-view-more4").click(function () {
+                      $('.filter-product-container').css({
+                        'height': 'auto'
+                      });
+                      $('.resp-view-more4').css({
+                        'display': 'none'
+                      });
+                      $('.resp-hide2').css({
+                        'display': 'block'
+                      });
+                    });
+                  });
+                $(document).ready(function () {
+                  $(".resp-hide2").click(function () {
+                      $('.filter-product-container').css({
+                        'height': '3500px'
+                      });
+                      $('.resp-hide2').css({
+                        'display': 'none'
+                      });
+                      $('.resp-view-more3').css({
+                        'display': 'block'
+                      });
+                    });
+                  });
                   $(document).ready(function () {
-                    $(".resp-bg-btn").click(function () {
-                        $('.filter-product-wrapper').css({
-                          'height': '3600'
+                    $(".resp-view-all-btn2").click(function () {
+                        $('.filter-product-container').css({
+                          'height': '3500px'
                         });
-                        $('.resp-view-more1').css({
-                          'display': 'none'
-                        });
-                        $('.resp-view-more2').css({
-                          'display': 'none'
-                        });
-                        $('.resp-hide').css({
-                          'display': 'none'
-                        });
-                        $('.resp-hide-product').css({
-                          'display': 'none'
-                        });
-                        $('.resp-more-product').css({
+                        $('.resp-view-more3').css({
                           'display': 'block'
                         });
                         $('.body-guides').css({
                           'display': 'grid'
                         });
                         $('.product-guides').css({
-                          'display': 'none'
+                          'display': 'grid'
                         });
                         $('.hair-removal').css({
+                          'display': 'grid'
+                        });
+                        $('.resp-hide-product2').css({
+                          'display': 'none'
+                        });
+                        $('.resp-more-product2').css({
+                          'display': 'none'
+                        });
+                        $('.resp-view-more4').css({
+                          'display': 'none'
+                        });
+                        $('.resp-hide2').css({
                           'display': 'none'
                         });
                       });
                     });
                     $(document).ready(function () {
-                      $(".resp-hr-btn").click(function () {
-                          $('.filter-product-wrapper').css({
-                            'height': '3600'
+                      $(".resp-pg-btn2").click(function () {
+                          $('.filter-product-container').css({
+                            'height': '3500px'
                           });
-                          $('.resp-view-more1').css({
-                            'display': 'none'
-                          });
-                          $('.resp-view-more2').css({
-                            'display': 'none'
-                          });
-                          $('.resp-hide').css({
-                            'display': 'none'
-                          });
-                          $('.resp-hide-product').css({
-                            'display': 'none'
-                          });
-                          $('.resp-more-product').css({
+                          $('.resp-more-product2').css({
                             'display': 'block'
+                          });
+                          $('.resp-view-more3').css({
+                            'display': 'none'
                           });
                           $('.body-guides').css({
                             'display': 'none'
                           });
                           $('.product-guides').css({
-                            'display': 'block'
-                          });
-                          $('.hair-removal').css({
                             'display': 'grid'
                           });
-                        });
-                      });
-                  $(document).ready(function () {
-                    $(".resp-more-product").click(function () {
-                        $('.filter-product-wrapper').css({
-                          'height': 'auto'
-                        });
-                        $('.resp-more-product').css({
-                          'display': 'none'
-                        });
-                        $('.resp-hide-product').css({
-                          'display': 'block'
-                        });
-                      });
-                    });
-                    $(document).ready(function () {
-                      $(".resp-hide-product").click(function () {
-                          $('.filter-product-wrapper').css({
-                            'height': '3600px'
+                          $('.hair-removal').css({
+                            'display': 'none'
                           });
-                          $('.resp-more-product').css({
-                            'display': 'block'
+                          $('.resp-hide-product2').css({
+                            'display': 'none'
                           });
-                          $('.resp-hide-product').css({
+                          $('.resp-view-more4').css({
+                            'display': 'none'
+                          });
+                          $('.resp-hide2').css({
                             'display': 'none'
                           });
                         });
                       });
+                      $(document).ready(function () {
+                        $(".resp-bg-btn2").click(function () {
+                            $('.filter-product-container').css({
+                              'height': '3500px'
+                            });
+                            $('.resp-more-product2').css({
+                              'display': 'block'
+                            });
+                            $('.resp-view-more3').css({
+                              'display': 'none'
+                            });
+                            $('.body-guides').css({
+                              'display': 'grid'
+                            });
+                            $('.product-guides').css({
+                              'display': 'none'
+                            });
+                            $('.hair-removal').css({
+                              'display': 'none'
+                            });
+                            $('.resp-hide-product2').css({
+                              'display': 'none'
+                            });
+                            $('.resp-view-more4').css({
+                              'display': 'none'
+                            });
+                            $('.resp-hide2').css({
+                              'display': 'none'
+                            });
+                          });
+                        });
+                        $(document).ready(function () {
+                          $(".resp-hr-btn2").click(function () {
+                              $('.filter-product-container').css({
+                                'height': '3500px'
+                              });
+                              $('.resp-more-product2').css({
+                                'display': 'block'
+                              });
+                              $('.resp-view-more3').css({
+                                'display': 'none'
+                              });
+                              $('.body-guides').css({
+                                'display': 'none'
+                              });
+                              $('.product-guides').css({
+                                'display': 'none'
+                              });
+                              $('.hair-removal').css({
+                                'display': 'grid'
+                              });
+                              $('.resp-hide-product2').css({
+                                'display': 'none'
+                              });
+                              $('.resp-view-more4').css({
+                                'display': 'none'
+                              });
+                              $('.resp-hide2').css({
+                                'display': 'none'
+                              });
+                            });
+                          });
+                        $(document).ready(function () {
+                          $(".resp-more-product2").click(function () {
+                              $('.filter-product-container').css({
+                                'height': 'auto'
+                              });
+                              $('.resp-hide-product2').css({
+                                'display': 'block'
+                              });
+                              $('.resp-more-product2').css({
+                                'display': 'none'
+                              });
+                            });
+                          });
+                          $(document).ready(function () {
+                            $(".resp-hide-product2").click(function () {
+                                $('.filter-product-container').css({
+                                  'height': '3500px'
+                                });
+                                $('.resp-hide-product2').css({
+                                  'display': 'none'
+                                });
+                                $('.resp-more-product2').css({
+                                  'display': 'block'
+                                });
+                              });
+                            });

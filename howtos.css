@@ -3,7 +3,7 @@
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-header{
+.nav-wrapper{
     width: 100%;
     height: 100px;
     background: white;
@@ -76,77 +76,6 @@ header{
     color: rgb(223, 30, 143);
     margin-top: 5px;
     margin-left: 5px;
-}
-
-
-
-
-
-/** RESPONSIVE NAV-MENU---**/
-.resp-searchbar{
-    position: relative;
-    right: 150px;
-    width: 77%;
-    height: 42px;
-    margin-top: 38px;
-    border-radius: 30px;
-    padding-left: 15px;
-    padding-right: 35px;
-    border: none;
-    outline: none;
-    background: whitesmoke;
-    display: none;
-}
-.resp-search-logo{
-    position: absolute;
-    top: 50px;
-    right: 0;
-    margin-right: 195px;
-    color: rgb(5, 5, 159);
-    display: none;
-}
-.resp-us{
-    position: absolute;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: rgb(5, 5, 159);
-    right: 0;
-    top: 38px;
-    margin-right: 125px;
-    display: none;
-}
-.fa-bars{
-    visibility: hidden;
-    position: absolute;
-    right: 0px;
-    padding-right: 55px;
-    margin-top: 45px;
-    font-size: 1.8rem;
-    color: rgb(5, 5, 159);
-}
-.fa-xmark{
-    visibility: hidden;
-    position: absolute;
-    right: 0px;
-    padding-right: 55px;
-    margin-top: 45px;
-    font-size: 2rem;
-    font-weight: 900;
-    color: rgb(223, 30, 143);
-}
-.resp-whynair-menu{
-    width: 50%;
-    margin-top: 30px;
-    margin-left: 20px;
-    display: none;
-}
-.resp-nav-menu .resp-whynair-menu ul li{
-    border: none;
-    margin-top: -25px;
-    color: white;
-}
-.resp-whynair-close{
-    display: none;
 }
 /** NAV-TOP-CONTENT-------------------------------------------------------------**/
 .nav-top-content{
@@ -235,7 +164,6 @@ header{
     margin-top: 55px;
     background-color: rgb(5, 5, 86);
 }
-
 /** nav-bottom-content ------------------------------------------------ **/
 .nav-bottom-content{
     width: 800px;
@@ -259,6 +187,94 @@ header{
 .nav-bottom-content a{
     text-decoration: none;
     color: rgb(5, 5, 86);
+}
+/** RESPONSIVE NAV-MENU---**/
+.resp-nav-menu{
+    display: none;
+}
+.resp-whynair-menu{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: none;
+}
+.resp-nav-menu .resp-whynair-menu ul li{
+    border: none;
+    margin-top: -25px;
+    color: white;
+}
+.resp-whynair-close{
+    display: none;
+}
+
+/* responsive / mobile navbar ------------*/
+.responsive-nav-container{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.resp-navlogo-con{
+    width: 150px;
+    height: 100px;
+}
+.resp-navlogo-con img{
+    width: 65%;
+    height: 45%;
+    margin-top: 15%;
+    margin-left: 20%;
+}
+.resp-navsb-con{
+    width: 60%;
+    height: 100px;
+    display: flex;
+    color: rgb(5, 5, 86);
+}
+.resp-searchbar{
+    width: 80%;
+    height: 50px;
+    font-size: 1rem;
+    margin-top: 25px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 40px;
+    border-radius: 25px;
+    background-color: whitesmoke;
+}
+.resp-search-logo{
+    position: relative;
+    font-size: 1.3rem;
+    margin-top: 40px;
+    margin-left: -40px;
+}
+.resp-navus-con{
+    width: 80px;
+    height: 100px;
+    color: rgb(5, 5, 86);
+}
+.resp-navus{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 35px;
+    text-align: center;
+}
+.resp-navmenu-btn-con{
+    width: 50px;
+    height: 100px;
+}
+.nav-open{
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-right: 10px;
+    color: rgb(5, 5, 86);
+}
+.nav-close{
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-right: 10px;
+    color: rgb(243, 20, 83);
+    visibility: hidden;
 }
 /** TOP CONTAINER wrapper ---**/
 .howtos-wrapper{
@@ -363,10 +379,26 @@ header{
 .resp-hr-btn{
     display: none;
 }
+.resp-view-all-btn2{
+    display: none;
+}
+.resp-pg-btn2{
+    display: none;
+}
+.resp-bg-btn2{
+    display: none;
+}
+.resp-hr-btn2{
+    display: none;
+}
 .filter-product-wrapper{
     width: 100%;
-    height: 1150px;
+    height: auto;
     background: radial-gradient(circle at 13% 103%, rgba(253, 179, 45, 0.6), rgba(238, 253, 55, 0) 60%);
+}
+.filter-product-container{
+    width: 100%;
+    height: 1150px;
     overflow-y: hidden;
 }
 .filter-product{
@@ -419,15 +451,10 @@ header{
     color: rgb(223, 30, 143);
 }
 .viewmore-container{
-    width: 100%;
+    width: 200px;
     height: auto;
     text-align: center;
-    background: radial-gradient(circle at 13% 0, rgba(253, 179, 45, 0.6), rgba(238, 253, 55, 0) 80%);
-}
-.viewmore-container button{
-    text-align: center;
-    justify-content: center;
-    margin-left: 43%;
+    margin: 0 auto;
 }
 .resp-view-more1{
     width: 200px;
@@ -548,6 +575,72 @@ header{
     background: rgb(223, 30, 143);
     display: none;
 }
+.resp-view-more3{
+    width: 80%;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 10%;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: white;
+    background: rgb(223, 30, 143);
+    display: none;
+}
+.resp-view-more4{
+    width: 80%;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 10%;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: white;
+    background: rgb(223, 30, 143);
+    display: none;
+}
+.resp-hide2{
+    width: 80%;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 10%;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: white;
+    background: rgb(223, 30, 143);
+    display: none;
+}
+.resp-more-product2{
+    width: 80%;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 10%;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: white;
+    background: rgb(223, 30, 143);
+    display: none;
+}
+.resp-hide-product2{
+    width: 80%;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 10%;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: white;
+    background: rgb(223, 30, 143);
+    display: none;
+}
+
 /** FOOTER SA WAKAS LAST PART!!!!! :D  ---------------------------------------------------------------------**/
 .footer{
     position: absolute;
@@ -614,21 +707,21 @@ header{
 .copy-write-con a{
     color: rgb(1, 1, 76);
 }
-.footer-right-logo{
-    width: 15%;
-    height: 70px;
-    position: relative;
-    margin-top: 350px;
-    margin-left:380px;
-    transition: 0.3s ease-in-out;
+.footer-logo-container{
+    width: 100%;
+    height: 50px;
 }
-.footer-right-logo img{
+.footer-imgcon{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    margin-top: -50px;
+    margin-right: 30px;
+}
+.footer-imgcon img{
     width: 100%;
     height: 100%;
-}
-
-.footer-right-logo:hover{
-    transform: translateY(-10%);
 }
 /** subcon5 ---------**/
 .subcon5-wrapper{
@@ -720,13 +813,7 @@ header{
     transform: translateY(-10%);
     box-shadow: rgba(41, 2, 194, 0.5) 0px 5px 15px;
 }
-@media screen and (max-width: 1400px){
-    .resp-nav-menu{
-        display: none;
-    }
-}
 @media screen and (max-width: 1200px) {
-    
     .nav-logo-container{
         height: 65px;
         margin-top: 15px;
@@ -760,10 +847,12 @@ header{
         font-size: 3.2rem;
     }
     .howtos-detailscon h2{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+        margin-bottom: 0px;
     }
     .howtos-detailscon p{
         font-size: 1.2rem;
+        margin-top: 0px;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -809,41 +898,20 @@ header{
         font-size: 3rem;
     }
     .howtos-detailscon h2{
-        font-size: 1.3rem;
-        margin-top: 5px;
-        margin-bottom: 10px;
+        width: auto;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 0px;
     }
     .howtos-detailscon p{
-        font-size: 1rem;
+        font-size: 1.1rem;
+        margin-top: 10px;
     }
 }
 @media screen and (max-width: 767px) {
     .nav-container{
-        width: 100%;
-        margin-left: 0%;
-        display: grid;
-        grid-template-columns: 25% 50%;
-        grid-auto-rows: 100px;
-        grid-row-gap: 20px;
-    }
-    .nav-logo-container{
-        margin-top: 20px;
-        margin-left: 50px;
-    }
-    .nav-content-container{
         display: none;
-    }
-    .fa-bars{
-        visibility: visible;   
-    }
-    .resp-searchbar{
-        display: block;
-    }
-    .resp-search-logo{
-        display: block;
-    }
-    .resp-us{
-        display: block;
     }
     .resp-nav-menu{
         width: 100vw;
@@ -893,6 +961,9 @@ header{
         color: white;
         background-color: rgb(5, 5, 86);
     }
+    .responsive-nav-container{
+        display: flex;
+    }
     .howtos-top-container{
         width: 90%;
         height: auto;
@@ -901,7 +972,7 @@ header{
     }
     .howtos-imgcon{
         width: 80%;
-        height: 700px;
+        height: 650px;
         margin-top: 40px;
         margin-left: 10%;
     }
@@ -916,8 +987,8 @@ header{
         font-size: 3.5rem;
     }
     .howtos-detailscon h2{
-        width: 64%;
-        font-size: 1.6rem;
+        width: 100%;
+        font-size: 1.5rem;
         font-weight: 600;
         letter-spacing: 1px;
         color: rgb(5, 5, 86);
@@ -926,7 +997,7 @@ header{
     }
     .howtos-detailscon p{
         width: 90%;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-weight: 400;
         color: rgb(5, 5, 86);
     }
@@ -992,8 +1063,7 @@ header{
     .resp-hr-btn{
         display: block;
     }
-
-    .filter-product-wrapper{
+    .filter-product-container{
         width: 100%;
         height: 3600px;
     }
@@ -1034,7 +1104,7 @@ header{
         width: 100%;
         height: auto;
         text-align: center;
-        background: rgba(253, 179, 45, 0.6);
+        margin-top: 35px;
     }
     .viewmore-container button{
         margin-left: 10%;
@@ -1182,7 +1252,7 @@ header{
     }
     .footer-menu{
         margin-bottom: 30px;
-        margin-left: 50px;
+        margin-left: 0px;
         margin-top: 20px;
     }
     .copy-write-con{
@@ -1191,5 +1261,463 @@ header{
     .footer-right-logo{
         width: 20%;
         margin-left:150px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .resp-navlogo-con{
+        width: 100px;
+        height: 100px;
+    }
+    .resp-navlogo-con img{
+        width: 65%;
+        height: 30%;
+        margin-left: 10%;
+        margin-top: 30px;
+    }
+    .nav-open{
+        font-size: 1.7rem;
+        margin-top: 32px;
+        margin-right: 10px;
+        color: rgb(5, 5, 86);
+    }
+    .nav-close{
+        font-size: 1.7rem;
+        margin-top: 32px;
+        margin-right: 10px;
+        color: rgb(243, 20, 83);
+        visibility: hidden;
+    }
+    .howtos-imgcon{
+        width: 80%;
+        height: 500px;
+    }
+    .howtos-detailscon h1{
+        font-size: 3rem;
+    }
+    .howtos-detailscon h2{
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .howtos-detailscon p{
+        width: 90%;
+        font-size: 1.3rem;
+    }
+    .arrow-down-container i{
+        font-size: 2rem;
+    }
+    .filter-container{
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+    }
+    .filter-product-wrapper{
+        padding-bottom: 80px;
+    }
+    .filter-product{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 50px;
+        display: grid;
+        row-gap: 25px;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: auto;
+    } 
+    /** sign up container -----------------**/
+    .subcon5-wrapper{
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+    .subcon5-signup-con{
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        margin-top: 0px;
+        display: inline-block;
+    }
+    .signup-details{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .signup-details h1{
+        font-size: 2.5rem;
+        font-weight: 900;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+    .signup-details p{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .subcon5-fillup-con{
+        width: 90%;
+        height: 350px;
+        margin-top: 0px;
+        margin-left: 5%;
+    }
+    .input-details{
+        display: inline-block;
+        width: 95%;
+        height: 50px;
+        margin-top: 20px;
+        outline: none;
+        border: 2px solid black;
+    }
+    .input-details{
+        font-size: 1rem;
+        font-weight: 600;
+        padding-left: 20px;
+    }
+    .terms-condition-con{
+        width: 90%;
+        height: 120px;
+        margin-left: 10px;
+    }
+    .check-box{
+        position:relative;
+        width: 22px;
+        height: 30px;
+        top: 30px;
+        accent-color: rgb(20, 20, 186);
+    }
+    .subcon5-fillup-btn{
+        width: 105%;
+    }
+    .subcon5-fillup-btn:hover{
+        transform: translateY(-10%);
+        box-shadow: rgba(41, 2, 194, 0.5) 0px 5px 15px;
+    }
+
+    .footer-container{
+        width: 90%;
+        height: 450px;
+        margin-top: 25px;
+        margin-left: 5%;
+        display: flex;
+    }
+    .footer-left-con{
+        width: 70%;
+    }
+    .footer-accounts{
+        position: relative;
+        width: 100%;
+    }
+    .footer-accounts i{
+        font-size: 1.2rem;
+    }
+    .footer-menu{
+        margin-bottom: 30px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .copy-write-con{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .resp-navlogo-con img{
+        width: 65%;
+        height: 30%;
+        margin-left: 20%;
+        margin-top: 32px;
+    }
+    .nav-open{
+        font-size: 1.5rem;
+        margin-top: 35px;
+    }
+    .nav-close{
+        font-size: 1.5rem;
+        margin-top: 35px;
+        visibility: hidden;
+    }
+    .resp-navsb-con{
+        width: 65%;
+        height: 100px;
+        display: flex;
+    }
+    .resp-searchbar{
+        width: 62%;
+        height: 40px;
+        margin-top: 30px;
+    }
+    .resp-search-logo{
+        position: relative;
+        font-size: 1.1rem;
+        margin-top: 40px;
+        margin-left: -30px;
+    }
+    .resp-navus{
+        font-size: 1rem;
+        text-align: left;
+    }
+    /* responsive hidden menu -------*/
+    .resp-nav-menu ul li{
+        font-size: 1.2rem;
+    }
+    .resp-nav-accounts{
+        font-size: 1.5rem;
+    }
+    .resp-nav-accounts i{
+        padding: 10px;
+    }
+    .howtos-imgcon{
+        width: 80%;
+        height: 400px;
+    }
+    .howtos-detailscon h1{
+        font-size: 2.5rem;
+    }
+    .howtos-detailscon h2{
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .howtos-detailscon p{
+        width: 90%;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    .filter-btn{
+        width: 100%;
+        display: inline-block;
+    }
+    .filter-btn button{
+        width: 100%;
+        height: 35px;
+        margin-top: 10px;
+    }
+    .resp-view-all-btn{
+        display: none;
+    }
+    .resp-pg-btn{
+        display: none;
+    }
+    .resp-bg-btn{
+        display: none;
+    }
+    .resp-hr-btn{
+        display: none;
+    }
+    .resp-view-all-btn2{
+        display: block;
+    }
+    .resp-pg-btn2{
+        display: block;
+    }
+    .resp-bg-btn2{
+        display: block;
+    }
+    .resp-hr-btn2{
+        display: block;
+    }
+    .filter-product-container{
+        width: 100%;
+        height: 3500px;
+        overflow-y: hidden;
+    }
+    .filter-product{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 50px;
+        display: grid;
+        row-gap: 25px;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: auto;
+    } 
+    .product-img{
+        height: 300px;
+    }
+    .product-details{
+        height: 170px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .resp-view-more1{
+        display: none;
+    }
+    .resp-view-more3{
+        width: 80%;
+        height: 40px;
+        margin-left: 10%;
+        display: block;
+    }
+    .signup-details h1{
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+    .signup-details p{
+        font-size: 1rem;
+    }
+    .subcon5-fillup-btn{
+        font-size: 0.9rem;
+        height: 50px;
+    }
+    .footer-imgcon{
+        width: 80px;
+        height: 28px;
+        position: absolute;
+        right: 0;
+        margin-top: -50px;
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .resp-navlogo-con{
+        width: 70px;
+        height: 100px;
+    }
+    .nav-open{
+        font-size: 1.3rem;
+    }
+    .nav-close{
+        font-size: 1.3rem;
+    }
+    .resp-searchbar{
+        width: 60%;
+        height: 40px;
+        font-size: 1rem;
+        margin-top: 30px;
+        margin-left: 10px;
+        border: none;
+        outline: none;
+        padding-left: 20px;
+        padding-right: 40px;
+        border-radius: 25px;
+        background-color: whitesmoke;
+    }
+    .resp-navus-con{
+        width: 60px;
+        height: 100px;
+        color: rgb(5, 5, 86);
+        border: 1;
+    }
+    .resp-navus{
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 35px;
+        text-align: left;
+    }
+    .resp-nav-menu ul li{
+        font-size: 1rem;
+    }
+    .resp-nav-menu p{
+        margin-top: 30px;
+        font-size: 1rem;
+    }
+    .resp-nav-accounts{
+        font-size: 1rem;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .howtos-imgcon{
+        width: 80%;
+        height: 350px;
+    }
+    .howtos-detailscon{
+        height: auto;
+    }
+    .howtos-detailscon h1{
+        font-size: 2rem;
+    }
+    .howtos-detailscon h2{
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .howtos-detailscon p{
+        width: 90%;
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    .arrow-down-container i{
+        font-size: 1.3rem;
+    }
+    .filter-container h2{
+        font-size: 1.2rem;
+    }
+    .filter-btn button{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .product-details p{
+        font-size: 1rem;
+    }
+    .product-details h2{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 360px) {
+    .resp-navlogo-con img{
+        width: 80%;
+        height: 28%;
+        margin-top: 32px;
+        float: right;
+    }
+    .nav-open{
+        font-size: 1.2rem;
+    }
+    .nav-close{
+        font-size: 1.2rem;
+    }
+    .resp-searchbar{
+        width: 60%;
+        height: 35px;
+        font-size: 0.9rem;
+        margin-top: 30px;
+        margin-left: 10px;
+        border: none;
+        outline: none;
+        padding-left: 20px;
+        padding-right: 40px;
+        border-radius: 25px;
+        background-color: whitesmoke;
+    }
+    .resp-search-logo{
+        font-size: 0.9rem;
+    }
+    .resp-navus{
+        font-size: 0.9rem;
+    }
+    .signup-details{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .signup-details h1{
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+    .signup-details p{
+        margin-top: 10px;
+        font-size: 0.8rem;
+    }
+    .input-details{
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    .terms-condition{
+        font-size: 0.9rem;
+        line-height: 25px;
+    }
+    .subcon5-fillup-btn{
+        font-size: 0.8rem;
+    }
+    .footer-accounts i{
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    .footer-menu{
+        margin-left: 0px;
+    }
+    .footer-menu ul li{
+        font-size: 0.7rem;
+        margin-left: 0px;
+    }
+    .footer-imgcon{
+        width: 65px;
+        height: 32px;
+        position: absolute;
+        right: 0;
+        margin-top: -50px;
+        margin-right: 30px;
     }
 }
